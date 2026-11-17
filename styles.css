@@ -21,4 +21,15 @@
 .engineering-focus small{display:block;font:10px/1.8 var(--mono);color:var(--muted);margin-top:6px}
 .hero:has(.engineering-focus) .hero-bottom{margin-top:0;border-bottom:0;padding-top:0}
 @media(max-width:760px){.hero-portrait{justify-self:center;width:min(100%,320px)}.engineering-focus{grid-template-columns:1fr;gap:20px;padding:23px 0}.engineering-focus>div+div{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}.engineering-focus small{font-size:10px}}
+.professional-development{margin-top:48px;scroll-margin-top:110px}
+.professional-development>.eyebrow{margin-bottom:12px;font-size:9px}
+.professional-development>h3{font-size:26px;margin-bottom:24px}
+.credential-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.credential{display:flex;flex-direction:column;padding:24px;background:var(--surface);border:1px solid var(--line);border-radius:6px}
+.credential h4{font-size:17px;font-weight:550;line-height:1.4;margin:0 0 9px}
+.credential p{font-size:12px;line-height:1.8;color:var(--muted);margin-bottom:22px}
+.credential .credential-meta{font:10px/1.6 var(--mono);margin-bottom:16px}
+.credential a{font:11px var(--mono);color:var(--accent);margin-top:auto;align-self:flex-start;border-bottom:1px solid transparent;padding-bottom:4px}
+.credential a:hover{border-color:var(--accent)}
+@media(max-width:760px){.credential-grid{grid-template-columns:1fr}.credential{padding:22px}.professional-development{margin-top:36px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
